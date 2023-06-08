@@ -24,7 +24,8 @@ interest: |
   1. Large language model pretraining and finetunings
   2. Multimodal machine learning
   3. Parameter efficient fine tuning
-  3. Large language model for medical/clinical/health domains
-  4. Parameter efficient fine tuning for medical/clinical/health domains
-  3. Do not care about specific application, for example, information extraction, named entity recognition, summarization, etc.
-  4. Not interested in paper focus on specific languages, e.g., Arabic, Chinese, etc.
+  4. Music, audio generation
+  5. Large language model for medical/clinical/healthcare domains
+  6. Recommendation systems, ranking, and retrieval
+  7. Do not care about specific application, for example, information extraction, named entity recognition, etc.
+  8. Not interested in paper focus on specific languages, e.g., Arabic, Chinese, etc.
