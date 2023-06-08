@@ -21,11 +21,13 @@ threshold: 0
 # This can be empty, which just return a full list of papers with no judgement or filtering,
 # in whatever order arXiv responds with.
 interest: |
-  1. Large language model pretraining and finetunings
-  2. Multimodal machine learning
-  3. Parameter efficient fine tuning
-  4. Music, audio generation
-  5. Large language model for medical/clinical/healthcare domains
-  6. Recommendation systems, ranking, and retrieval
-  7. Do not care about specific application, for example, information extraction, named entity recognition, etc.
-  8. Not interested in paper focus on specific languages, e.g., Arabic, Chinese, etc.
+  1. Papers from prominent organizations such as OpenAI, Google, Meta, Standford, etc.
+  2. Parameter efficient fine tuning
+  3. Large language model pretraining and finetunings
+  4. Multimodal machine learning
+  5. Music, audio generation
+  6. Large language model for medical/clinical/healthcare domains
+  7. Recommendation systems, ranking, and retrieval
+  8. Do not care about specific application, for example, information extraction, named entity recognition, etc.
+  9. Not interested in paper focus on specific languages, e.g., Arabic, Chinese, etc.
+  10. Not interested in paper related to Covid-19.
