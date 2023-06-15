@@ -24,10 +24,9 @@ interest: |
   1. Papers from prominent organizations such as OpenAI, Google, Meta, Standford, etc.
   2. Parameter efficient fine tuning
   3. Large language model pretraining and finetunings
-  4. Multimodal machine learning
-  5. Music, audio generation
-  6. Large language model for medical/clinical/healthcare domains
-  7. Recommendation systems, ranking, and retrieval
-  8. Do not care about specific application, for example, information extraction, named entity recognition, etc.
-  9. Not interested in paper focus on specific languages, e.g., Arabic, Chinese, etc.
-  10. Not interested in paper related to Covid-19, Blockchain.
+  4. Music, audio generation, Multimodal machine learning
+  5. Large language model for medical
+  6. Recommendation systems, ranking, and retrieval
+  7. Do not care about specific application, for example, information extraction, named entity recognition, etc.
+  8. Not interested in paper focus on specific languages, e.g., Arabic, Chinese, etc.
+  9. Not interested in paper related to Covid-19, Blockchain.
