@@ -42,17 +42,22 @@ def post_process_chat_gpt_response(paper_data, response, threshold_score=8):
     json_items = response['message']['content'].replace("\n\n", "\n").split("\n")
     pattern = r"^\d+\. |\\"
     import pprint
-    try:
-        score_items = []
-        for line in json_items:
-            if "relevancy score" not in line.lower():
-                continue
-            line = re.sub(pattern, "", line)
-            line = line.replace(":", "")
-        score_items.append(json.loads(line))
-    except Exception:
-        pprint.pprint([re.sub(pattern, "", line) for line in json_items if "relevancy score" in line.lower()])
-        raise RuntimeError("failed")
+    score_items = []
+    for line in json_items:
+        if "relevancy score" not in line.lower():
+            continue
+        line = re.sub(pattern, "", line)
+        try:
+            item = json.loads(line)
+        except Exception:
+            pprint.pprint(r'Error parsing {line!r}')
+            # For debugging.
+            item = {
+                "Relevancy score": 11,
+                "Reasons for match": line,
+            }
+            continue
+        score_items.append(item)
     pprint.pprint(score_items)
     scores = []
     for item in score_items:
