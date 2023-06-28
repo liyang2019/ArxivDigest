@@ -62,6 +62,7 @@ def post_process_chat_gpt_response(paper_data, response, threshold_score=8):
     scores = []
     for item in score_items:
         temp = item["Relevancy score"]
+        print('debug', temp)
         if "/" in temp:
             scores.append(int(temp.split("/")[0]))
         else:
