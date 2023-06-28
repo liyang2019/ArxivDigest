@@ -53,7 +53,7 @@ def post_process_chat_gpt_response(paper_data, response, threshold_score=8):
             pprint.pprint(r'Error parsing {line!r}')
             # For debugging.
             item = {
-                "Relevancy score": 11,
+                "Relevancy score": '11',
                 "Reasons for match": line,
             }
             continue
