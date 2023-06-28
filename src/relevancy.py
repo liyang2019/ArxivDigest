@@ -48,7 +48,7 @@ def post_process_chat_gpt_response(paper_data, response, threshold_score=8):
             continue
         line = re.sub(pattern, "", line)
         try:
-            item = json.loads(line)
+            item = {k: str(v) for k, v in json.loads(line).items()}
         except Exception:
             pprint.pprint(r'Error parsing {line!r}')
             # For debugging.
@@ -61,7 +61,7 @@ def post_process_chat_gpt_response(paper_data, response, threshold_score=8):
     pprint.pprint(score_items)
     scores = []
     for item in score_items:
-        temp = str(item["Relevancy score"])
+        temp = item["Relevancy score"]
         if "/" in temp:
             scores.append(int(temp.split("/")[0]))
         else:
